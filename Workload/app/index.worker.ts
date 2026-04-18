@@ -102,7 +102,7 @@ export async function initialize(params: InitParams) {
                     NotificationToastDuration.Medium);
             }
             // [JOB_SUPPORT] Job scheduling - To enable, run: scripts/Setup/CreateJob.ps1
-            // case 'run.helloworld.job': {
+            // case 'run.SOAKCONNECT.job': {
             //     // Handle job execution triggered from context menu
             //     const { item } = data as ItemActionContext;
             //     const jobType = `${item.itemType}.RunJob`;

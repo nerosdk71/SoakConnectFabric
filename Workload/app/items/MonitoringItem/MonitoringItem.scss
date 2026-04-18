@@ -1,0 +1,394 @@
+/**
+ * ============================================================================
+ * Monitoring Item - Specific Styles
+ * ============================================================================
+ * 
+ * This file contains styles specific to the Monitoring item.
+ * All styles are prefixed with "monitoring-" to clearly indicate they are item-specific.
+ * 
+ * ## Design Principles
+ * - Uses Fabric UX design tokens for consistency
+ * - Minimal custom styling - leverages standard patterns where possible
+ * - Item-specific: Hero section branding and getting started layout
+ * 
+ * ## What's Item-Specific Here
+ * - Hero section with branded background color
+ * - Two-column getting started layout (hero + content)
+ * - Large hero title for visual impact
+ * 
+ * ## What Uses Standards
+ * - All spacing uses design tokens (--spacing*)
+ * - All colors use design tokens (--color*)
+ * - Border radius uses design tokens (--borderRadius*)
+ * - Font sizes use design tokens where applicable (--fontSize*)
+ * - Standard card, button, and expandable patterns
+ * 
+ * ## References
+ * - Fabric Design Tokens: https://aka.ms/fabric-tokens
+ * - Fluent UI v9: https://react.fluentui.dev/
+ */
+
+// ============================================================================
+// Unified View Section - Common container for both left and center panels
+// ============================================================================
+
+.monitoring-view {
+  width: 100%;
+  height: auto; // Allow natural height growth with content
+  min-height: 100%; // Minimum height but allow growth
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--spacingVerticalXL);
+  border-radius: 0;
+  flex-shrink: 0;
+  padding: var(--spacingHorizontalXXL);
+  box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+// Hero title - Intentionally large for visual impact (item-specific)
+.monitoring-title {
+  font-size: 45px;
+  font-weight: var(--fontWeightSemibold);
+  line-height: 60px;
+  color: var(--colorNeutralForegroundStatic);
+  margin: 0;
+  font-family: var(--fontFamilyBase);
+}
+
+// ============================================================================
+// Content Inner - Center panel specific layout
+// ============================================================================
+
+.monitoring-content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacingVerticalXXL);
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box; /* Ensure consistent box model */
+}
+
+// ============================================================================
+// Section Header - Standard section header pattern
+// ============================================================================
+
+.monitoring-next {
+  width: 100%;
+  box-sizing: border-box; /* Ensure consistent box model */
+}
+
+.monitoring-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacingVerticalS);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.monitoring-section-body {
+  padding-top: 6px;
+  
+}
+
+.monitoring-section-title {
+  color: var(--colorNeutralForeground1);
+  font-size: 22px;
+  font-family: var(--fontFamilyBase);
+  font-weight: var(--fontWeightSemibold);
+  line-height: 40px;
+  margin: 0;
+}
+
+.monitoring-next-list {
+  margin: 0;
+  margin-left: 12px;
+  padding-left: var(--spacingHorizontalXL);
+  list-style-position: outside;
+  list-style-type: decimal; // 1, 2, 3...
+}
+
+.monitoring-next-item {
+  font-size: var(--fontSizeBase300);
+  line-height: 28px;
+  color: var(--colorNeutralForegroundStatic);
+}
+
+.monitoring-step-button {
+  margin-top: var(--spacingVerticalXS);
+  display: flex;
+  justify-content: flex-start;
+
+  .fui-link {
+    font-size: var(--fontSizeBase300) !important;
+    font-weight: var(--fontWeightSemibold) !important;
+    color: var(--colorBrandForegroundLink) !important;
+    font-family: var(--fontFamilyBase) !important;
+    text-decoration: underline !important;
+    padding: 0 !important;
+    
+    &:hover {
+      color: var(--colorBrandForegroundLinkHover) !important;
+      text-decoration: underline !important;
+    }
+    
+    &:active {
+      color: var(--colorBrandForegroundLinkPressed) !important;
+      text-decoration: underline !important;
+    }
+    
+    &:focus {
+      outline: 2px solid var(--colorCompoundBrandStroke) !important;
+      outline-offset: 2px !important;
+    }
+  }
+  
+  .fui-Button {
+    background: var(--colorNeutralBackground1) !important;
+    background-color: var(--colorNeutralBackground1) !important;
+    border-color: var(--colorNeutralStroke1) !important;
+    color: var(--colorNeutralForeground1) !important;
+    
+    &:hover {
+      background: var(--colorNeutralBackground1Hover) !important;
+      background-color: var(--colorNeutralBackground1Hover) !important;
+      border-color: var(--colorNeutralStroke1Hover) !important;
+      color: var(--colorNeutralForeground1) !important;
+    }
+    
+    &:active {
+      background: var(--colorNeutralBackground1Pressed) !important;
+      background-color: var(--colorNeutralBackground1Pressed) !important;
+      border-color: var(--colorNeutralStroke1Pressed) !important;
+      color: var(--colorNeutralForeground1) !important;
+    }
+    
+    &:focus {
+      background: var(--colorNeutralBackground1) !important;
+      background-color: var(--colorNeutralBackground1) !important;
+      border-color: var(--colorNeutralStroke1) !important;
+      color: var(--colorNeutralForeground1) !important;
+    }
+  }
+}
+
+// Separator line for getting started section
+.monitoring-separator-line {
+  width: calc(100% - 8px); // Subtract left + right margins (4px + 4px)
+  height: 1px;
+  border: none;
+  background: var(--colorNeutralStroke2, #e1e1e1);
+  margin: var(--spacingVerticalXXL, 32px) 4px; // Top/bottom: 32px (increased spacing), Left/right: 4px
+}
+
+// Hero input container and styling
+.monitoring-hero-input {
+  margin-top: var(--spacingVerticalS);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacingVerticalXS);
+  width: 100%;
+}
+
+.monitoring-input-label {
+  font-size: var(--fontSizeBase300);
+  font-weight: var(--fontWeightBold);
+  color: var(--colorNeutralForegroundStatic);
+  font-family: var(--fontFamilyBase);
+  margin: 0;
+}
+
+.monitoring-section-subtitle {
+  color: var(--colorNeutralForeground1);
+  font-size: var(--fontSizeBase300);
+  font-family: var(--fontFamilyBase);
+  font-weight: var(--fontWeightRegular);
+  line-height: var(--lineHeightBase400);
+  margin: 0;
+}
+
+// ============================================================================
+// Expandable Card - Standard expandable pattern
+// ============================================================================
+
+.monitoring-expandable-card {
+  border: 1px solid var(--colorNeutralStroke1);
+  border-radius: var(--borderRadiusMedium);
+  background: var(--colorNeutralBackground1);
+  overflow: hidden;
+  max-width: 66.66%;
+}
+
+.monitoring-expand-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--spacingHorizontalS);
+  padding: var(--spacingVerticalM) var(--spacingHorizontalL);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.1s ease;
+  min-height: 44px;
+
+  &:hover {
+    background: var(--colorNeutralBackground1Hover);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--colorCompoundBrandStroke);
+    outline-offset: -2px;
+  }
+}
+
+.monitoring-expand-icon {
+  transition: transform 0.2s ease;
+  color: var(--colorNeutralForeground2);
+
+  &.expanded {
+    transform: rotate(180deg);
+  }
+
+  &.collapsed {
+    transform: rotate(0deg);
+  }
+}
+
+.monitoring-expand-title {
+  font-size: var(--fontSizeBase400);
+  font-weight: var(--fontWeightSemibold);
+  color: var(--colorNeutralForeground1);
+  font-family: var(--fontFamilyBase);
+}
+
+.monitoring-expand-content {
+  padding: 0 var(--spacingHorizontalL) var(--spacingVerticalL);
+  border-top: 1px solid var(--colorNeutralStroke2);
+}
+
+// ============================================================================
+// Detail Rows - Standard key-value pattern
+// ============================================================================
+
+.monitoring-detail-row {
+  display: flex;
+  justify-content: flex-start;
+  padding: var(--spacingVerticalS) 0;
+  gap: var(--spacingHorizontalXS);
+  
+  // Special handling for rows with input fields
+  &:has(.monitoring-hero-input) {
+    flex-direction: column;
+    gap: var(--spacingVerticalXS);
+  }
+}
+
+.monitoring-detail-label {
+  font-size: var(--fontSizeBase300);
+  font-weight: var(--fontWeightSemibold);
+  color: var(--colorNeutralForeground2);
+  font-family: var(--fontFamilyBase);
+
+  &::after {
+    content: ':';
+  }
+}
+
+.monitoring-detail-value {
+  font-size: var(--fontSizeBase300);
+  font-weight: var(--fontWeightRegular);
+  color: var(--colorNeutralForeground1);
+  font-family: var(--fontFamilyBase);
+  word-break: break-all;
+}
+
+// ============================================================================
+// Resource Cards - Standard grid card pattern
+// ============================================================================
+
+.monitoring-resources-section {
+  width: 100%;
+  // No height constraints - let content grow naturally
+}
+
+.monitoring-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacingHorizontalL);
+}
+
+.monitoring-resource-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--colorNeutralStroke1);
+  border-radius: var(--borderRadiusMedium);
+  background: var(--colorNeutralBackground1);
+  padding: var(--spacingVerticalL);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.monitoring-card-header-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacingVerticalM);
+  margin-bottom: var(--spacingVerticalM);
+}
+
+.monitoring-card-image-container {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--colorNeutralBackground2);
+  border-radius: var(--borderRadiusMedium);
+  margin-bottom: var(--spacingVerticalS);
+}
+
+.monitoring-card-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.monitoring-card-body {
+  flex: 1 1 auto;
+  margin-bottom: var(--spacingVerticalM);
+}
+
+.monitoring-card-list {
+  margin: 0;
+  padding-left: var(--spacingHorizontalL);
+  list-style-type: disc;
+}
+
+.monitoring-card-list-item {
+  font-size: var(--fontSizeBase300);
+  line-height: var(--lineHeightBase300);
+  color: var(--colorNeutralForeground2);
+  margin-bottom: var(--spacingVerticalS);
+  font-family: var(--fontFamilyBase);
+}
+
+.monitoring-card-footer {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: var(--spacingVerticalM);
+  border-top: 1px solid var(--colorNeutralStroke2);
+}
+
+// ============================================================================
+// Responsive Design
+// ============================================================================
+
+@media (max-width: 1200px) {
+  .monitoring-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .monitoring-resource-card {
+    max-width: 100%;
+  }
+}

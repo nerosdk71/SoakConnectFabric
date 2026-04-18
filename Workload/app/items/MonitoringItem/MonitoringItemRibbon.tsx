@@ -10,9 +10,9 @@ import {
 import { ViewContext } from '../../components';
 
 /**
- * Props interface for the HelloWorld Ribbon component
+ * Props interface for the Monitoring Ribbon component
  */
-export interface HelloWorldItemRibbonProps extends PageProps {
+export interface MonitoringItemRibbonProps extends PageProps {
   isSaveButtonEnabled?: boolean;
   viewContext: ViewContext;
   saveItemCallback: () => Promise<void>;
@@ -20,7 +20,7 @@ export interface HelloWorldItemRibbonProps extends PageProps {
 }
 
 /**
- * HelloWorldItemRibbon - Demonstrates the recommended ribbon pattern
+ * MonitoringItemRibbon - Demonstrates the recommended ribbon pattern
  * 
  * This demonstrates the recommended pattern for creating consistent ribbons
  * across all item editors in the Fabric Extensibility Toolkit.
@@ -34,7 +34,7 @@ export interface HelloWorldItemRibbonProps extends PageProps {
  * - Maintains accessibility with built-in Tooltip + ToolbarButton pattern
  * - Follows Fabric design guidelines
  */
-export function HelloWorldItemRibbon(props: HelloWorldItemRibbonProps) {
+export function MonitoringItemRibbon(props: MonitoringItemRibbonProps) {
   const { viewContext } = props;
 
   // Use the action factories for automatic translation and consistent styling

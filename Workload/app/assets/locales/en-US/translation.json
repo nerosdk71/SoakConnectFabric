@@ -17,9 +17,10 @@
     "ItemEditor_Saved_Notification_Text": "{{itemName}} saved successfully.",
     "ItemEditor_SaveFailed_Notification_Title": "Save failed",
     "ItemEditor_SaveFailed_Notification_Text": "Failed to save {{itemName}}.",
-    "HelloWorldItemEditor_Title": "Hello World Item Editor",
-    "HelloWorldItemEditor_Definition_Message_Label": "Item Definition",
-    "HelloWorldItemEditorEmpty_Message": "Let's say hello to {{itemName}}!",
-    "HelloWorldItemEditorEmpty_Button": "Save item"
+    "MonitoringItemEditor_Title": "Monitoring",
+    "MonitoringItemEditor_Definition_Message_Label": "Item Definition",
+    "MonitoringItemEditorEmpty_Message": "Welcome to {{itemName}}!",
+    "MonitoringItemEditorEmpty_Button": "Save item",
+    "MonitoringItemEditor_Loading": "Loading Monitoring..."
 }
   

@@ -1,16 +1,16 @@
 {
-  "name": "HelloWorld",
+  "name": "Monitoring",
   "version": "1.100",
-  "displayName": "HelloWorldItem_DisplayName",
-  "displayNamePlural": "HelloWorldItem_DisplayName_Plural",
+  "displayName": "MonitoringItem_DisplayName",
+  "displayNamePlural": "MonitoringItem_DisplayName_Plural",
   "editor": {
-    "path": "/HelloWorldItem-editor"
+    "path": "/MonitoringItem-editor"
   },
   "icon": {
-    "name": "assets/images/HelloWorldItem_Icon.png"
+    "name": "assets/images/MonitoringItem_Icon.png"
   },
   "activeIcon": {
-    "name": "assets/images/HelloWorldItem_Icon.png"
+    "name": "assets/images/MonitoringItem_Icon.png"
   },
   "contextMenuItems": [],
   "quickActionItems": [],

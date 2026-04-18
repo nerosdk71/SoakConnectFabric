@@ -24,7 +24,7 @@ export type { RibbonAction, RibbonDropdownAction, DropdownMenuItem, RibbonAction
  * 
  * Note: Other actions (Undo, Redo, Delete, Share, Print, Download, Upload, Add, Edit, Close)
  * should be implemented as custom actions specific to each item editor's needs.
- * See HelloWorldItemRibbon.tsx for examples of creating custom actions.
+ * See SOAKCONNECTItemRibbon.tsx for examples of creating custom actions.
  * 
  * Translation: All actions use default translation keys with fallbacks for internationalization.
  * 

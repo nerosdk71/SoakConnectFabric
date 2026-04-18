@@ -15,27 +15,27 @@
           "introduction": "Workload_Hub_GetStarted_1_Sub_Title",
           "description": "Workload_Hub_GetStarted_1_Description",
           "image": "assets/images/Workload_Hub_GetStarted_1.png",
-          "link": "https://aka.ms/get-started-learning-docs"
+          "link": "https://docs.soak.dk/docs/business-central/soak-connect"
         }
       ],
       "newSection": {
         "customActions": [
         ]},
         "recommendedItemTypes": [
-          "HelloWorld"
+          "Monitoring"
         ]
     },
     "createExperience": {
       "description": "Workload_Description",
       "cards": [
         {
-          "title": "HelloWorldItem_DisplayName",
-          "description": "HelloWorldItem_Description",
+          "title": "MonitoringItem_DisplayName",
+          "description": "MonitoringItem_Description",
           "icon": {
-            "name": "assets/images/HelloWorldItem_Icon.png"
+            "name": "assets/images/MonitoringItem_Icon.png"
           },
           "icon_small": {
-            "name": "assets/images/HelloWorldItem_Icon.png"
+            "name": "assets/images/MonitoringItem_Icon.png"
           },
           "availableIn": [
             "home",
@@ -43,7 +43,7 @@
             "workspace-plus-new",
             "workspace-plus-new-teams"
           ],
-          "itemType": "HelloWorld",
+          "itemType": "Monitoring",
           "createItemDialogConfig": {
             "onCreationFailure": { "action": "item.onCreationFailure" },
             "onCreationSuccess": { "action": "item.onCreationSuccess" }
@@ -52,7 +52,7 @@
       ]
     },
     "productDetail": {
-      "publisher": "Name of publisher",
+      "publisher": "SOAK A/S",
       "slogan": "Workload_Hub_Slogan",
       "description": "Workload_Hub_Description",
       "image": {
@@ -73,8 +73,8 @@
           "documentation": {"url": "https://example.com/documentation"},
           "certification": {"url": "https://example.com/certification"},
           "help": {"url": "https://example.com/help"},
-          "privacy": {"url": "https://example.com/privacy"},
-          "terms": {"url": "https://example.com/terms"},
+          "privacy": {"url": "https://docs.soak.dk/legal/privacy"},
+          "terms": {"url": "https://docs.soak.dk/legal/eula"},
           "license": {"url": "https://azuremarketplace.microsoft.com"} 
       }
     },
